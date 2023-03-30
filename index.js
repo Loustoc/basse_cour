@@ -11,16 +11,16 @@ function Frame(){
   
   setTimeout(function(){
   requestAnimationFrame(Frame);
-  },40);
+  },60);
   anim_marteau.setAttribute("src", `img/anim/basse-cour-anim00${n}.svg`);
   
   i++;
   if(i==1){
     // fonction pour lancer le son
-  setTimeout(function(){Paf.play();},500);
-  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},1000);
-  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},1500);
-  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},2700);
+  setTimeout(function(){Paf.play();},600);
+  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},1300);
+  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},1900);
+  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},3800);
   }
 }
 else{
