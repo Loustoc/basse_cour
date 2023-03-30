@@ -69,7 +69,7 @@ function start_anim() {
   setTimeout(function () {
     document.getElementById("anim_marteau").src =
       "img/anim/basse-cour-anim0074.svg";
-  },3200);
+  },3000);
     setTimeout(function(){
        fade_anim();
         },3800);
