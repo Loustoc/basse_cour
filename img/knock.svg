@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.91 r13725" sodipodi:docname="hobbit-door.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120.4 132.4"
+	 style="enable-background:new 0 0 120.4 132.4;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{fill:url(#rect4319_00000054951794940331790080000001167267487199409558_);stroke:#000000;stroke-width:4;stroke-miterlimit:4.25;}
+	
+		.st1{fill:url(#path4185_00000062881690724524458860000008277617316884466878_);stroke:#000000;stroke-width:4;stroke-miterlimit:4.25;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview11" inkscape:current-layer="Layer_1" inkscape:cx="-495.74399" inkscape:cy="153.44744" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1002" inkscape:window-maximized="1" inkscape:window-width="1680" inkscape:window-x="0" inkscape:window-y="24" inkscape:zoom="0.4908153" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<linearGradient id="rect4319_00000079457554579348151580000014997642368189250449_" gradientUnits="userSpaceOnUse" x1="37.4724" y1="24.7662" x2="83.0047" y2="24.7662">
+	<stop  offset="5.618000e-03" style="stop-color:#FCCB00"/>
+	<stop  offset="0.2528" style="stop-color:#FFFAD2"/>
+	<stop  offset="0.2982" style="stop-color:#FAF1C1"/>
+	<stop  offset="0.3885" style="stop-color:#EDD894"/>
+	<stop  offset="0.5138" style="stop-color:#D8B14C"/>
+	<stop  offset="0.5955" style="stop-color:#C9961A"/>
+	<stop  offset="0.8142" style="stop-color:#E9CD76"/>
+	<stop  offset="0.8708" style="stop-color:#F2DC8E"/>
+	<stop  offset="1" style="stop-color:#FFFAD2"/>
+</linearGradient>
+<rect id="rect4319" x="37.5" y="2" style="fill:url(#rect4319_00000079457554579348151580000014997642368189250449_);stroke:#000000;stroke-width:4;stroke-miterlimit:4.25;" width="45.5" height="45.5"/>
+<linearGradient id="path4185_00000079479802719455576870000004453173522896255395_" gradientUnits="userSpaceOnUse" x1="2" y1="72.2589" x2="118.3507" y2="72.2589">
+	<stop  offset="5.618000e-03" style="stop-color:#FCCB00"/>
+	<stop  offset="0.2528" style="stop-color:#FFFAD2"/>
+	<stop  offset="0.2982" style="stop-color:#FAF1C1"/>
+	<stop  offset="0.3885" style="stop-color:#EDD894"/>
+	<stop  offset="0.5138" style="stop-color:#D8B14C"/>
+	<stop  offset="0.5955" style="stop-color:#C9961A"/>
+	<stop  offset="0.8142" style="stop-color:#E9CD76"/>
+	<stop  offset="0.8708" style="stop-color:#F2DC8E"/>
+	<stop  offset="1" style="stop-color:#FFFAD2"/>
+</linearGradient>
+<path id="path4185" inkscape:connector-curvature="0" style="fill:url(#path4185_00000079479802719455576870000004453173522896255395_);stroke:#000000;stroke-width:4;stroke-miterlimit:4.25;" d="
+	M60.2,14.1C28,14.1,2,40.1,2,72.3c0,32.1,26,58.2,58.2,58.2c32.1,0,58.2-26,58.2-58.2C118.3,40.1,92.3,14.1,60.2,14.1z M60.2,31.8
+	c22.4,0,40.5,18.1,40.5,40.5c0,0,0,0,0,0c0,22.4-18.1,40.5-40.5,40.5c0,0,0,0,0,0c-22.4,0-40.5-18.1-40.5-40.5c0,0,0,0,0,0
+	C19.7,49.9,37.8,31.8,60.2,31.8C60.2,31.8,60.2,31.8,60.2,31.8z"/>
+</svg>

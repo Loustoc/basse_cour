@@ -1,0 +1,170 @@
+
+.vid_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+html, body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.faded{
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+
+.portes{
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    z-index: 1;
+}
+
+.visible{
+ opacity: 1;
+ transition: 1s;
+}
+ 
+ .opening_g{
+    transform: translateX(-50vw);
+    transition: 1s;
+    z-index: -1;
+}
+
+.opening_d{
+    transform: translateX(50vw);
+    z-index: -1;
+    transition: 1s;
+
+
+}
+#porte_g{
+    width: 50%;
+}
+#porte_d{
+    width: 50%;
+}
+
+#fond_tribunal{
+    z-index: -19;
+    position: fixed;
+    opacity: 0;
+    scale: 1.4;
+}
+
+.fond_visible{
+    opacity: 0.2 !important;
+    transition: 1s;
+}
+
+.fond_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+nav{
+    box-sizing: border-box;
+    margin: 20px 0px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    /* left: calc(50vw - 50%); */
+    width: 100vw;
+    gap: 20px;
+    opacity: 0;
+}
+
+#logo{
+    width: 100px;
+}
+.boutons_container{
+    width: 400px;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.bouton{
+    width: 100px;
+    padding: 0px 10px;
+    background-color: rgb(121, 121, 121);
+    border-radius: 99999999px;
+    text-align: center;
+}
+.content{
+    max-width: 900px;
+    min-width: 200px;
+    width: 50vw;
+    border-radius: 10px;
+    height: 300px;
+    background-color: rgb(135, 135, 135);
+    flex-shrink: 0;
+    /*position: relative;
+    border-radius: 10px; */
+}
+
+main{
+    transform: translateX(5vw);
+    margin-top: 250px;
+    height: 65vh;
+    /* height: 600px; */
+    width: 90vw;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: scroll;
+    z-index: 99999999;
+    position: relative;
+}
+
+.blur_cache{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transition: 1s;
+    z-index: 99999999999999999999;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#enter_button{
+    transition: 1s;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(145, 124, 124, 0);
+    border-radius: 10px;
+    cursor: url("/img/knock.png"),auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+    z-index: -19;
+    transition: 1s;
+}
