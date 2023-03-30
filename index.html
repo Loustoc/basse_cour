@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="./libgif.js"></script>
 		<script type="text/javascript" src="./rubbable.js"></script>
     <title>Basse Cour</title>
@@ -13,9 +17,10 @@
 <body>
     <div class="blur_cache">
         <div onclick="open_page()" id="enter_button"> Toquez deux fois pour entrer</div>
+
     </div>
     <div class="vid_container">
-        <img id="anim_marteau" width="500px" height="500px" src="/img/anim/basse-cour-anim001.svg" />
+        <img src="img/anim/basse-cour-anim000.svg" id="anim_marteau" alt="">
     </div>
     <div class="portes">
         <img id="porte_g" src="/img/porte_g.png" alt=""> 

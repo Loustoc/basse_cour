@@ -168,3 +168,7 @@ main{
     z-index: -19;
     transition: 1s;
 }
+
+#anim_marteau{
+    width: 500px;
+}
