@@ -1,32 +1,6 @@
-// const { default: src } = require("gsap/src");
 
 let i = 0;
 
-// function Frame(){
-
-//   let n = i % 75;
-//   if(!(n==74)){
-
-//   setTimeout(function(){
-//   requestAnimationFrame(Frame);
-//   },60);
-//   anim_marteau.setAttribute("src", `img/anim/basse-cour-anim00${n}.svg`);
-
-//   i++;
-//   if(i==1){
-//     // fonction pour lancer le son
-//   setTimeout(function(){Paf.play();},600);
-//   setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},1300);
-//   setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},1900);
-//   setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},3800);
-//   }
-// }
-// else{
-//     setTimeout(function(){
-//        fade_anim();
-//         },100);
-// }
-// }
 function fade_anim() {
   document.getElementById("anim_marteau").classList.toggle("faded");
   document.querySelector(".portes").classList.toggle("visible");
@@ -63,19 +37,11 @@ function start_anim() {
   setTimeout(function(){Paf3.play();},1400);
   setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},2500);
   
-  // setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},2800);
 document.getElementById("anim_marteau").play();
       setTimeout(function(){
        fade_anim();
       },3500);
-  // document.getElementById("anim_marteau").src = "/basse-cour-anim.gif";
-  // setTimeout(function () {
-  //   document.getElementById("anim_marteau").src =
-  //     "img/anim/basse-cour-anim0074.svg";
-  // },2900);
-  //   setTimeout(function(){
-  //      fade_anim();
-  //       },3800);
+ 
 }
 
 
