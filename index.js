@@ -64,15 +64,18 @@ function start_anim() {
   setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},2500);
   
   // setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},2800);
-  
-  document.getElementById("anim_marteau").src = "/basse-cour-anim.gif";
-  setTimeout(function () {
-    document.getElementById("anim_marteau").src =
-      "img/anim/basse-cour-anim0074.svg";
-  },2800);
-    setTimeout(function(){
+document.getElementById("anim_marteau").play();
+      setTimeout(function(){
        fade_anim();
-        },3800);
+      },3500);
+  // document.getElementById("anim_marteau").src = "/basse-cour-anim.gif";
+  // setTimeout(function () {
+  //   document.getElementById("anim_marteau").src =
+  //     "img/anim/basse-cour-anim0074.svg";
+  // },2900);
+  //   setTimeout(function(){
+  //      fade_anim();
+  //       },3800);
 }
 
 
