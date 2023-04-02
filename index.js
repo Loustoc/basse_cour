@@ -32,17 +32,45 @@ const Paf3 = new Audio((src = "sons/hammer.mp3"));
 
 
 function start_anim() {
-  setTimeout(function(){Paf.play();},500);
-  setTimeout(function(){Paf2.play();},1000);
-  setTimeout(function(){Paf3.play();},1400);
-  setTimeout(function(){Paf.pause();Paf.currentTime=0;Paf.play();},2500);
-  
-document.getElementById("anim_marteau").play();
-      setTimeout(function(){
-       fade_anim();
-      },3500);
- 
+  setTimeout(function() { Paf.play(); }, 500);
+  setTimeout(function() { Paf2.play(); }, 1000);
+  setTimeout(function() { Paf3.play(); }, 1400);
+  setTimeout(function() { Paf.pause(); Paf.currentTime = 0; Paf.play(); }, 2500);
+
+  document.getElementById("anim_marteau").play();
+  setTimeout(function() {
+    fade_anim();
+  }, 3500);
 }
 
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
+const button3 = document.getElementById("button3")
+const section1 = document.getElementById("section1");
+const section2 = document.getElementById("section2");
+const section3 = document.getElementById("section3")
+const section0 = document.getElementById("section0");
 
- 
+
+
+button1.addEventListener("click", function() {
+    section2.style.display = "none";
+    section0.style.display = "none";
+    section3.style.display = "none";
+    section1.style.display = "block";
+  });
+  
+  button2.addEventListener("click", function() {
+    section1.style.display = "none";
+    section3.style.display = "none";
+    section0.style.display = "none";
+    section2.style.display = "block";
+  });
+
+  button3.addEventListener("click", function(){
+    section1.style.display ="none";
+    section2.style.display ="none";
+    section0.style.display ="none";
+    section3.style.display ="block";
+
+  })

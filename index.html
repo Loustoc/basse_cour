@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.4.js"
-      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-      crossorigin="anonymous"
-    ></script>
-    <title>Basse Cour</title>
-  </head>
-  <body onmousedown="return false" onselectstart="return false">
-    <div class="blur_cache">
-      <div onclick="open_page()" id="enter_button">
-        Toquez deux fois pour entrer
-      </div>
-    </div>
-    <div class="vid_container">
-      <video id="anim_marteau" src="anim.webm"></video>
-    </div>
-    <div class="portes">
-      <img id="porte_g" src="/img/porte_g.png" alt="" />
-      <img id="porte_d" src="/img/porte_d.png" alt="" />
-    </div>
-    <div class="fond_container">
-      <img id="fond_tribunal" src="/img/fond_tribunal.png" alt="" />
-    </div>
 
-    <nav>
-      <img id="logo" src="/img/logo.svg" alt="" />
-      <div class="boutons_container">
-        <div class="bouton regles"><p>Règles</p></div>
-        <div class="bouton persos"><p>Personnages</p></div>
-      </div>
-    </nav>
-    <main>
-      <div class="content"></div>
-      <div class="content"></div>
-      <div class="content"></div>
-      <div class="content"></div>
-      <div class="content"></div>
-      <div class="content"></div>
-      <div class="content"></div>
-      <div class="content"></div>
-    </main>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <title>Basse Cour</title>
+</head>
+
+<body onmousedown="return false" onselectstart="return false">
+  <div class="blur_cache">
+    <div onclick="open_page()" id="enter_button">
+      Toquez deux fois pour entrer
+    </div>
+  </div>
+  <div class="vid_container">
+    <video id="anim_marteau" src="anim.webm"></video>
+  </div>
+  <div class="portes">
+    <img id="porte_g" src="/img/porte_g.png" alt="Porte gauche tribunal" />
+    <img id="porte_d" src="/img/porte_d.png" alt="Porte droite tribunal" />
+  </div>
+  <div class="fond_container">
+    <img id="fond_tribunal" src="/img/fond_tribunal.png" alt="fond tribunal" />
+  </div>
+
+  <nav>
+    <img id="logo" src="/img/logo.svg" alt="logo basse cour" />
+
+    <div class="boutons_container">
+      <button id="button1">
+        Règles
+      </button>
+      <button id="button2">
+        Personnages
+      </button>
+      <button id="button3">
+        Cartes
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section class="introSection" id="section0"><p>Bienvenue dans BASSE COUR, le jeu où vous allez vous accuser. Incarnez un procureur, un bureaucrate, un avocat ou une enquêtrice et découvrez qui est le coupable.</p>
+        <!-- <img src="img/fond_tribunal.jpg" alt="tribunal"> -->
+        <img src="img/bcjeu.png" alt="Photo de la pochette du jeu">
+    </section>
+    <section class="rulesSection" id="section1" style="display:none;">
+        <h2>Le but du jeu</h2>
+        <p>À chaque tour, un juge est nommé et 3 personnes sont accusées. Le juge tire une carte histoire tandis que les accusés piochent chacun une carte mots qu’ils étudient avant de commencer la partie. Le juge lit ensuite les faits et chaque accusé va se défendre à tour de rôle pendant 1min 30s. Le but pour les accusés est de placé le plus de mots de leur carte sans se faire prendre. Si le juge découvre que l’un des mots utilisés fait partie de la liste, le plaidoyer s’arrête immédiatement.  Il a droit à 3 essais par plaidoyer. À la fin du tour, on compte le nombre de mots dit par chacun des accusés et celui qui en a le moins prend un jeton accusation. Puis, c’est au tour du juge de prendre sa décision : il donne un autre jeton accusation à l’histoire qu’il a trouvé le moins convaincante. Puis on passe et la manche d’après avec un nouveau juge et de nouvelles cartes. La partie se termine lorsque l’un des joueurs a atteint 5 jetons accusation.</p>
+        <h2>Déroulé d'une partie</h2>
+        <p>La première chose à faire est de distribuer les rôles au hasard. Découvrez votre personnage puis garder la carte face cachée, vous la retournerez lorsque vous utiliserez son atout. Puis, le plus jeune des joueurs commence en tant que juge.</p>
+    </section>
+    <section class="charactersSection" id="section2" style="display:none;">
+        <p>Chaque personnage a un atout qu’il peut utiliser une seule fois lors de la partie. Lorsque le joueur veut utiliser l’atout, il retourne la carte personnage.</p>
+        <div class="persoArticle">
+            <h2>Le bureaucrate</h2>
+            <div class="persoDetails">
+            <img src="img/requin.png" alt="Carte requin bureaucrate">
+            <p>La carte du bureaucrate est représentée par un requin. Le Bureaucrate a le droit à la <b>grâce présidentielle</b> pendant 1 manche. Après la décision du juge, si le joueur est accusé, il peut retourner cette carte et utiliser la grâce présidentielle. Ainsi, personne ne prend de jeton accusation donné par le juge. Attention, cet atout n’est pas valable sur les jetons pris par le nombre de mots.  </p>
+        </div>
+    </div>
+    <div class="persoArticle">
+        <h2>L'enquêtrice</h2>
+        <div class="persoDetails">
+        <p>L’enquêtrice est maligne. À la fin des trois plaidoyers, le joueur qui a cette carte peut la retourner et utiliser l’atout. <b>5 points</b> sont alors ajoutés à son nombre total de mots dits lors de la manche.</p>
+        <img src="img/souris.png" alt="Carte souris enquêtrice">
+    </div>
+    </div>
+        </div>
+        <div class="persoArticle">
+            <h2>L'avocate</h2>
+            <div class="persoDetails">
+            <img src="img/zebre.png" alt="Carte zèbre avocate">
+            <p>L’avocate est très éloquante. Lors de son plaidoyer, et si le juge découvre un de ses mots, le joueur <b>peut continuer son plaidoyer jusqu’à la fin.</b> Les mots trouvés par le juge ne sont pas comptabilisés à la fin de la manche.</p>
+        </div>
+        </div>
+        <div class="persoArticle">
+            <h2>Le procureur</h2>
+            <div class="persoDetails">
+            <p>L'atout du procureur ne peut être utilisé que lorsque le joueur est le juge de la manche. Au moment de la décision du juge, le joueur retourne la carte et peut alors décider <b>d’accuser tout le monde</b> au lieu d’une seule personne. Ainsi, les 3 accusés prennent un jeton accusation.</p>
+            <img src="img/rhino.png" alt="Carte rhino procureur">
+        </div>
+        </div>
+    </section>
+    <section class="carteSection" id="section3"     style="display:none;">
+        <p>Il existe 3 types de cartes dans le jeu : les cartes histoire, les cartes mots et les cartes personnages.</p> 
+        <div class="cartes">
+        <div class="cartedetails">
+            <h2>Cartes histoire</h2>
+            <img src="img/histoire_dos.png" alt="Dos des cartes histoire">
+        </div>
+        <div class="cartedetails">
+            <h2>Cartes personnage</h2>
+            <img src="img/perso_dos.png" alt="Dos des cartes personnage">
+        </div>
+        <div class="cartedetails">
+            <h2>Cartes mots</h2>
+            <img src="img/mot_dos.png" alt="Dos des cartes mots">
+        </div>
+    </div>
+        </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
